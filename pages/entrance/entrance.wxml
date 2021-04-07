@@ -1,0 +1,19 @@
+<view class="container" style="background-color:{{bg}}">
+    <view class="poem-container">
+
+        <view class="sentence-container">
+            <block wx:for="{{poem}}" wx:key="index">
+                <text class="poem">{{item}}</text>
+            </block>
+        </view>
+
+        <view class="copy-right">
+            <text class="title">{{'﹁' + title + '﹂'}}</text>
+            <text class="author">{{author}}</text>
+        </view>
+    </view>
+
+    <view class="moto-container" bind:tap="onTap">
+        <text class="moto">进入Just4Me</text>
+    </view>
+</view>

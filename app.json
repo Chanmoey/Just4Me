@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/entrance/entrance",
+    "pages/home/home"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Just4Me",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "l-icon": "/miniprogram_npm/lin-ui/icon/index",
+    "l-tag": "/miniprogram_npm/lin-ui/tag/index"
+  }
+}
