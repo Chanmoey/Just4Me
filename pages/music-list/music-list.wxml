@@ -1,0 +1,4 @@
+<view class="container">
+    <image class="top-img" src="/imgs/missyou.png"></image>
+    <l-water-flow generic:l-water-flow-item="s-music"></l-water-flow>
+</view>

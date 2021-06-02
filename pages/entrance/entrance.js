@@ -51,7 +51,7 @@ Page({
 
     onTap(event){
         wx.navigateTo({
-            url: "../home/home"
+            url: "../music-list/music-list"
         })
     }
 

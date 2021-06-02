@@ -1,0 +1,8 @@
+<view class="container">
+    <image mode="aspectFit" class="img" src="{{img}}"></image>
+    <view class="info-container">
+        <text class="song-name">{{songName}}</text>
+        <l-tag size="mini" l-class="singer">{{singer}} - {{album}}</l-tag>
+        <text class="description">{{description}}</text>
+    </view>
+</view>

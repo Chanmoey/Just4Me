@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/entrance/entrance",
-    "pages/home/home"
+    "pages/home/home",
+    "pages/music-list/music-list"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -13,6 +14,7 @@
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
     "l-icon": "/miniprogram_npm/lin-ui/icon/index",
-    "l-tag": "/miniprogram_npm/lin-ui/tag/index"
+    "l-tag": "/miniprogram_npm/lin-ui/tag/index",
+    "l-water-flow": "/miniprogram_npm/lin-ui/water-flow/index"
   }
 }
