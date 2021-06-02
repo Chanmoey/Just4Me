@@ -16,7 +16,9 @@ Component({
         songName: String,
         singer: String,
         album: String,
-        description: String
+        description: String,
+        h: 0,
+        w: 0
     },
 
     observers: {
@@ -39,5 +41,13 @@ Component({
     /**
      * 组件的方法列表
      */
-    methods: {}
+    methods: {
+        onImgLoad(event) {
+            const {width, height} = event.detail
+            this.setData({
+                w: 340,
+                h: 340 * height / width
+            })
+        }
+    }
 })

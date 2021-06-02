@@ -1,5 +1,5 @@
 <view class="container">
-    <image mode="aspectFit" class="img" src="{{img}}"></image>
+    <image bind:load="onImgLoad" style="width:{{w}}rpx;height:{{h}}rpx" class="img" src="{{img}}"></image>
     <view class="info-container">
         <text class="song-name">{{songName}}</text>
         <l-tag size="mini" l-class="singer">{{singer}} - {{album}}</l-tag>
