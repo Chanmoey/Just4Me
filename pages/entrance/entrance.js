@@ -1,6 +1,6 @@
-import {GetRandomColor} from "../../model/GetRandomColor";
+import {Get_random_color} from "../../models/get_random_color";
 
-const {GetPoem} = require("../../model/GetPoem");
+const {Get_poem} = require("../../models/get_poem");
 
 Page({
 
@@ -20,9 +20,8 @@ Page({
      */
     onLoad: async function (options) {
         try {
-            const getPoem = new GetPoem()
-            await getPoem.getPoem()
-            const data = getPoem.get()
+            const getPoem = new Get_poem()
+            const data = await getPoem.get()
 
             this.setData({
                 poem: data.poem,
@@ -37,7 +36,7 @@ Page({
             })
         }
 
-        const color = GetRandomColor.getColor()
+        const color = Get_random_color.getColor()
         this.setData({
             bg: color
         })
@@ -50,7 +49,7 @@ Page({
     },
 
     onTap(event){
-        wx.navigateTo({
+        wx.redirectTo({
             url: "../music-list/music-list"
         })
     }

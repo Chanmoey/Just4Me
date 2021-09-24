@@ -1,4 +1,4 @@
-<view class="container">
+<view class="container" bind:tap="onGoToPlayer">
     <image bind:load="onImgLoad" style="width:{{w}}rpx;height:{{h}}rpx" class="img" src="{{img}}"></image>
     <view class="info-container">
         <text class="song-name">{{songName}}</text>

@@ -2,7 +2,8 @@
   "pages": [
     "pages/entrance/entrance",
     "pages/home/home",
-    "pages/music-list/music-list"
+    "pages/music-list/music-list",
+    "pages/play-music/play-music"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,5 +1,6 @@
 let musicData = [
     {
+        id: 0,
         song_url: "http://music.163.com/song/media/outer/url?id=187083.mp3",
         img: "http://p2.music.126.net/zLuGcnIJo-5G-7oaYdK5Qw==/109951165992436082.jpg",
         song_name: "为你钟情(Live)",
@@ -9,6 +10,7 @@ let musicData = [
             "一生首次尽吐心声"
     },
     {
+        id: 1,
         song_url: "http://music.163.com/song/media/outer/url?id=187402.mp3",
         img: "http://p2.music.126.net/ylf_QMnt4u0v_F518pn8Ng==/109951165085876142.jpg",
         song_name: "午后红茶",
@@ -18,6 +20,7 @@ let musicData = [
             "如果得到早餐使你融化随著日落谢绝对话"
     },
     {
+        id: 2,
         song_url: "http://music.163.com/song/media/outer/url?id=187014.mp3",
         img: "http://p2.music.126.net/zLuGcnIJo-5G-7oaYdK5Qw==/109951165992436082.jpg",
         song_name: "风继续吹(Live)",
@@ -27,6 +30,7 @@ let musicData = [
             "你已在我心 不必再问记着谁"
     },
     {
+        id: 3,
         song_url: "http://music.163.com/song/media/outer/url?id=186424.mp3",
         img: "http://p2.music.126.net/2YIpNoCzXfYgz4zIw3s0Vg==/73667279073787.jpg",
         song_name: "寂寞有害",
@@ -36,6 +40,7 @@ let musicData = [
             "若爱过我便应该很明白 寂寞有害"
     },
     {
+        id: 4,
         song_url: "http://music.163.com/song/media/outer/url?id=187092.mp3",
         img: "http://p2.music.126.net/zLuGcnIJo-5G-7oaYdK5Qw==/109951165992436082.jpg",
         song_name: "至少还有你(Live)",
@@ -45,6 +50,7 @@ let musicData = [
             "至于还有你 值得我去珍惜"
     },
     {
+        id: 5,
         song_url: "http://music.163.com/song/media/outer/url?id=187017.mp3",
         img: "http://p2.music.126.net/zLuGcnIJo-5G-7oaYdK5Qw==/109951165992436082.jpg",
         song_name: "侬本多情(Live)",
@@ -54,6 +60,7 @@ let musicData = [
             "一生首次尽吐心声"
     },
     {
+        id: 6,
         song_url: "http://music.163.com/song/media/outer/url?id=188175.mp3",
         img: "http://p2.music.126.net/cmvsHFnVKXO409hZdrbacA==/102254581395221.jpg",
         song_name: "倩女幽魂",
@@ -63,6 +70,7 @@ let musicData = [
             "路里风霜 风霜扑面干"
     },
     {
+        id: 7,
         song_url: "http://music.163.com/song/media/outer/url?id=189159.mp3",
         img: "http://p2.music.126.net/hxPXYXbxzFUkPeoFPAgWMw==/109951165341203879.jpg",
         song_name: "凝望",

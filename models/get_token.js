@@ -1,15 +1,18 @@
-import {Http} from "../utils/Http";
+import {Http} from "../utils/http";
 import {Token} from "../config/enum";
 
-class GetToken{
+/**
+ * 获取《今日诗词》方的Token
+ */
+class Get_token {
     token
     static KEY = "jinrishici-token"
 
     constructor() {
-        if (typeof GetToken.instance === 'object') {
-            return GetToken.instance
+        if (typeof Get_token.instance === 'object') {
+            return Get_token.instance
         }
-        GetToken.instance = this
+        Get_token.instance = this
         return this
     }
 
@@ -36,20 +39,20 @@ class GetToken{
     }
 
     _refreshLocal() {
-        wx.setStorageSync(GetToken.KEY, this.token)
+        wx.setStorageSync(Get_token.KEY, this.token)
     }
 
     async _getLocalToken() {
-        const token = wx.getStorageSync(GetToken.KEY)
+        const token = wx.getStorageSync(Get_token.KEY)
         if (!token) {
             await this.saveToken()
         }
 
-        return wx.getStorageSync(GetToken.KEY)
+        return wx.getStorageSync(Get_token.KEY)
     }
 
 }
 
 export {
-    GetToken
+    Get_token
 }

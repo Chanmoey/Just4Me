@@ -11,6 +11,7 @@ Component({
      * 组件的初始数据
      */
     data: {
+        id: Number,
         playUrl: String,
         img: String,
         songName: String,
@@ -28,6 +29,7 @@ Component({
                 console.log("fuck,接受不到数据啊")
             }
             this.setData({
+                id: data.id,
                 playUrl: data.song_url,
                 img: data.img,
                 songName: data.song_name,
@@ -48,6 +50,34 @@ Component({
                 w: 340,
                 h: 340 * height / width
             })
+        },
+
+        onGoToPlayer(event) {
+            wx.navigateTo({
+                url: `../../pages/play-music/play-music?musicId=${this.data.id}`
+            })
+
         }
     }
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

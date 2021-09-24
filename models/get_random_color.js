@@ -1,11 +1,11 @@
 import{color} from "../config/color";
 
-class GetRandomColor {
+class Get_random_color {
     static getColor(){
         return color[Math.round(Math.random()*color.length)]
     }
 }
 
 export {
-    GetRandomColor
+    Get_random_color
 }

@@ -1,8 +1,7 @@
-import {GetToken} from "./GetToken";
+import {Get_token} from "./get_token";
+const {Http} = require("../utils/http");
 
-const {Http} = require("../utils/Http");
-
-class GetPoem {
+class Get_poem {
     poem
     title
     author
@@ -10,20 +9,18 @@ class GetPoem {
     data
 
     constructor() {
-        this.getToken = new GetToken()
+        this.getToken = new Get_token()
     }
 
     async getPoem() {
         const token = await this.getToken.get()
 
-        const ret = await Http.request({
+        return await Http.request({
             url: "https://v2.jinrishici.com/sentence",
             header: {
                 'X-User-Token': token
             }
         })
-        this.data = ret.data
-        this.precessPoem(this.data)
     }
 
     precessPoem(poem) {
@@ -34,7 +31,10 @@ class GetPoem {
         this.author = poem.origin.author
     }
 
-    get() {
+    async get() {
+        this.data = await this.getPoem()
+        this.precessPoem(this.data)
+
         return {
             poem: this.poem,
             title: this.title,
@@ -45,5 +45,5 @@ class GetPoem {
 }
 
 export {
-    GetPoem
+    Get_poem
 }

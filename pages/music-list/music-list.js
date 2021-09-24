@@ -1,73 +1,27 @@
 let musicData = require("../../test-data/music-data.js")
 Page({
 
-  /**
-   * 页面的初始数据
-   */
-  data: {
-    musicList: Array
-  },
+    /**
+     * 页面的初始数据
+     */
+    data: {
+        musicList: Array
+    },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
+    /**
+     * 生命周期函数--监听页面加载
+     */
+    onLoad: function (options) {
 
-    // this.setData({
-    //     musicList: musicData.musicData
-    //   })
-    wx.lin.renderWaterFlow(musicData.musicData)
-    console.log(typeof musicData.musicData)
-    console.log(musicData.musicData)
+        this.setData({
+            musicList: musicData.musicData
+          })
+        wx.lin.renderWaterFlow(musicData.musicData)
+        this._set_music_list(this.data.musicList)
 
-  },
+    },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
+    _set_music_list(data) {
+        wx.setStorageSync('music_list', data)
+    }
 })
